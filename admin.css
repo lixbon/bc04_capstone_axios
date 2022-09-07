@@ -18,6 +18,6 @@
 .sp-thongbao {
   color: red;
 }
-header button a:hover {
+button a:hover {
   text-decoration: none;
 }

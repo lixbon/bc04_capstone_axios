@@ -25,7 +25,7 @@
   </head>
   <body>
     <!-- start loading  -->
-    <div id="loading">
+    <div id="loading" style="display: none">
       <div class="spinner-border text-warning" role="status">
         <span class="sr-only">Loading...</span>
       </div>
@@ -49,12 +49,189 @@
           </div>
         </div>
       </div>
-      <div class="main-cart d-flex" id="main-cart"></div>
+      <div class="main-cart d-flex" id="main-cart">
+        <div class="col-md-6 col-xl-3 justify-content-center">
+          <div class="card">
+            <div class="top-bar">
+              <p>SAMSUNG</p>
+              <em class="stocks">In Stock</em>
+            </div>
+            <div class="img-container">
+              <img
+                class="product-img"
+                src="https://cdn.tgdd.vn/Products/Images/42/217536/samsung-galaxy-m51-trang-new-600x600-600x600.jpg"
+                alt=""
+              />
+            </div>
+            <div class="details text-white">
+              <div class="name-fav">
+                <strong class="product-name">Samsung Galaxy M51 </strong>
+                <button onclick="this.classList.toggle(fav)" class="heart">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+              <div class="wrapper">
+                <p>
+                  Camera trước: 32 MP <br />
+                  Camera sau: Chính 64 MP ; Phụ 12 MP, 5 MP, 5 MP
+                </p>
+
+                <p>Thiết kế đột phá, màn hình tuyệt đỉnh</p>
+              </div>
+              <div class="purchase">
+                <p class="product-price">$350</p>
+                <span class="btn-add" id="addItem2">
+                  <div>
+                    <button onclick="addItem()" class="add-btn">
+                      Add <i class="fas fa-chevron-right"></i>
+                    </button></div
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-3 justify-content-center">
+          <div class="card">
+            <div class="top-bar">
+              <p>SAMSUNG</p>
+              <em class="stocks">In Stock</em>
+            </div>
+            <div class="img-container">
+              <img
+                class="product-img"
+                src="https://cdn.tgdd.vn/Products/Images/42/217536/samsung-galaxy-m51-trang-new-600x600-600x600.jpg"
+                alt=""
+              />
+            </div>
+            <div class="details text-white">
+              <div class="name-fav">
+                <strong class="product-name">Samsung Galaxy M22</strong>
+                <button onclick="this.classList.toggle(fav)" class="heart">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+              <div class="wrapper">
+                <p>
+                  Camera trước: 32 MP <br />
+                  Camera sau: Chính 12 MP ; Phụ 64 MP, 12 MP
+                </p>
+
+                <p>Thiết kế đột phá, màn hình tuyệt đỉnh</p>
+              </div>
+              <div class="purchase">
+                <p class="product-price">$450</p>
+                <span class="btn-add" id="addItem3">
+                  <div>
+                    <button onclick="addItem()" class="add-btn">
+                      Add <i class="fas fa-chevron-right"></i>
+                    </button></div
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-3 justify-content-center">
+          <div class="card">
+            <div class="top-bar">
+              <i class="fab fa-apple"></i>
+              <em class="stocks">In Stock</em>
+            </div>
+            <div class="img-container">
+              <img
+                class="product-img"
+                src="https://didongviet.vn/pub/media/catalog/product//i/p/iphone-11-pro-max-256gb-didongviet_23.jpg"
+                alt=""
+              />
+            </div>
+            <div class="details text-white">
+              <div class="name-fav">
+                <strong class="product-name">Iphone 11</strong>
+                <button onclick="this.classList.toggle(fav)" class="heart">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+              <div class="wrapper">
+                <p>
+                  Camera trước: 32 MP <br />
+                  Camera sau: Camera: Chính 12 MP ; Phụ 64 MP, 12 MP
+                </p>
+
+                <p>Thiết kế đột phá, màn hình tuyệt đỉnh</p>
+              </div>
+              <div class="purchase">
+                <p class="product-price">$1000</p>
+                <span class="btn-add" id="addItem4">
+                  <div>
+                    <button
+                      class="btn-qty"
+                      id="sub4"
+                      onclick="qtyChange(4,'sub')"
+                    >
+                      <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <p class="qty" id="qty4">2</p>
+                    <button
+                      class="btn-qty"
+                      id="add4"
+                      onclick="qtyChange(4,'add')"
+                    >
+                      <i class="fas fa-chevron-right"></i>
+                    </button>
+                  </div>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-3 justify-content-center">
+          <div class="card">
+            <div class="top-bar">
+              <i class="fab fa-apple"></i>
+              <em class="stocks">In Stock</em>
+            </div>
+            <div class="img-container">
+              <img
+                class="product-img"
+                src="https://cdn.tgdd.vn/Products/Images/44/231253/space-1-org.jpg"
+                alt=""
+              />
+            </div>
+            <div class="details text-white">
+              <div class="name-fav">
+                <strong class="product-name">Macbook</strong>
+                <button onclick="this.classList.toggle(fav)" class="heart">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+              <div class="wrapper">
+                <p>
+                  Camera trước: 32 MP <br />
+                  Camera sau: Chính 12 MP ; Phụ 64 MP, 12 MP
+                </p>
+
+                <p>Thiết kế đột phá, màn hình tuyệt đỉnh</p>
+              </div>
+              <div class="purchase">
+                <p class="product-price">$450</p>
+                <span class="btn-add" id="addItem7">
+                  <div>
+                    <button onclick="addItem(7)" class="add-btn">
+                      Add <i class="fas fa-chevron-right"></i>
+                    </button></div
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="nav">
         <button onclick="opensideNav()">
           <i class="fas fa-shopping-cart" style="font-size: 2rem"></i>
         </button>
-        <span class="total-qty" id="total-qty">0</span>
+        <span class="total-qty" id="total-qty">2</span>
       </div>
       <div onclick="closesideNav()" class="cover" id="cover1"></div>
       <div class="cover purchase-cover" id="purchase-cover"></div>
@@ -63,12 +240,35 @@
           <button onclick="closesideNav()"><i class="fas fa-times"></i></button>
           <h2>Cart</h2>
           <div class="cart-items" id="cart-items">
-            <span class="empty-cart"
-              >Looks Like You Haven't Added Any Product In The Cart</span
-            >
+            <div class="cart-item">
+              <div class="cart-img">
+                <img
+                  src="https://didongviet.vn/pub/media/catalog/product//i/p/iphone-11-pro-max-256gb-didongviet_23.jpg"
+                  alt=""
+                />
+              </div>
+              <strong class="name">Iphone 11</strong>
+              <span class="qty-change">
+                <div>
+                  <button class="btn-qty" onclick="qtyChange(4,'sub')">
+                    <i class="fas fa-chevron-left"></i>
+                  </button>
+                  <p class="qty">2</p>
+                  <button class="btn-qty" onclick="qtyChange(4,'add')">
+                    <i class="fas fa-chevron-right"></i>
+                  </button>
+                </div>
+              </span>
+              <p class="price">$2000</p>
+              <button onclick="removeItem('4')">
+                <i class="fas fa-trash"></i>
+              </button>
+            </div>
           </div>
           <div class="final">
-            <strong>Total: $ <span class="total" id="tongtien">0</span></strong>
+            <strong
+              >Total: $ <span class="total" id="tongtien">2000</span></strong
+            >
             <div class="action">
               <button onclick="buy(1)" class="btn buy">
                 Purchase
@@ -81,11 +281,10 @@
           </div>
         </div>
       </div>
-      <!-- Oder  -->
+
       <div class="order-now" id="oder-now"></div>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

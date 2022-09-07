@@ -47,7 +47,12 @@ button:focus {
   position: relative;
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(223, 91, 161) 0%, rgb(0, 212, 255) 96%);
+  background: linear-gradient(
+    90deg,
+    rgb(2, 0, 36) 0%,
+    rgb(223, 91, 161) 0%,
+    rgb(0, 212, 255) 96%
+  );
   overflow: hidden;
 }
 .banner .chonsanpham {
@@ -75,7 +80,7 @@ button:focus {
   background: rgba(0, 0, 0, 0.75);
   z-index: 2;
   -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   display: none;
 }
 
@@ -133,9 +138,9 @@ button:focus {
   top: 1rem;
   right: 1.5rem;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .main-cart {
@@ -147,12 +152,16 @@ button:focus {
   align-self: center;
   align-items: center;
 }
+.main-cart .col-md-6 {
+  display: flex;
+  max-width: 25%;
+}
 
 .card {
   position: relative;
   flex-shrink: 0;
   height: 550px;
-  width: 300px;
+  width: 260px;
   background-color: #010101;
   border-radius: 20px;
   overflow: hidden;
@@ -254,7 +263,8 @@ button:focus {
 }
 
 .main-cart .card:hover {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
   transform: translateY(-10px);
 }
 
@@ -493,4 +503,4 @@ button:focus {
   .invoice .order {
     width: 60%;
   }
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */
